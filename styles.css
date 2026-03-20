@@ -1,0 +1,32 @@
+.menu-item{
+ color:rgb(8, 8, 238);
+ font-weight:bold;
+ font-size:1.2em;
+ list-style-type:none;
+}
+.menu-card{
+    border:1px solid #ddd;
+    padding:20px;
+    margin:10px;
+    border-radius:  8px;
+    width: 250px;
+    background-color:white;
+}
+.order-btn{
+    background-color:#27ae60;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+    transition:0.3;
+}
+.order-btn:hover{
+    background-color:#2ecc71; /*A slightly lighter green*/
+    transform:scale(1.05)/*Make the button grow slightly*/
+}
+
+#special-of-the-day {
+    border:2px solid gold;/*A gold border only for the special*/
+    background-color:#fffdf0;/*A slight yellow tilt*/
+}

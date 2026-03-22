@@ -58,8 +58,3 @@
 }
  
 
-/*First item(Frozen Treats) */
-.menu-item:nth-child(1) p{
-    color:greenyellow;
-}
-

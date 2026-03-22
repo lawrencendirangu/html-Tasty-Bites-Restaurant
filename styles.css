@@ -31,5 +31,25 @@
     background-color:#fffdf0;/*A slight yellow tilt*/
 }
 
+.menu-item p {
+    color:#ff6347; /*This is a nice tomato red */
+    font-weight : bold ; /* Makes the words stand out more */
+    background-color: #fff4e6; /* Adds a light orange background highligt */
+    padding:5 px;/* Rounds  the corners of the  highlight */
 
+}
+
+/* First item (Milkshakes) */
+.menu-item:nth-child(1) p{
+    color: orange;
+}
+/* Second  item(Coffee) */
+.menu-item:nth-child(2) p{
+    color: saddlebrown;
+}
+ /*Third item(Carbonated Drinks) */
+ .menu-item:nth-child(3) p {
+    color: darkblue;
+
+ }
 

@@ -41,7 +41,7 @@
 
 /* First item (Milkshakes) */
 .menu-item:nth-child(1) p{
-    color: orange;
+    color: red;
 }
 /* Second  item(Coffee) */
 .menu-item:nth-child(2) p{
@@ -56,3 +56,10 @@
     color: aquamarine;
 
 }
+ 
+
+/*First item(Frozen Treats) */
+.menu-item:nth-child(1) p{
+    color:greenyellow;
+}
+

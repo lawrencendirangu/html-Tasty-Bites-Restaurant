@@ -12,7 +12,7 @@
     width: 250px;
     background-color:white;
 }
-.order-btn{
+.btn{
     background-color:#27ae60;
     color:white;
     padding:10px 15px;
@@ -21,7 +21,7 @@
     cursor: pointer;
     transition:0.3;
 }
-.order-btn:hover{
+.btn:hover{
     background-color:#2ecc71; /*A slightly lighter green*/
     transform:scale(1.05)/*Make the button grow slightly*/
 }

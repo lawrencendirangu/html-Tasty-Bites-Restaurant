@@ -27,11 +27,11 @@
     border:none;
     border-radius:5px;
     cursor: pointer;
-    transition:0.3;
+    transition:0.3s;
 }
 .btn:hover{
     background-color:#2ecc71; /*A slightly lighter green*/
-    transform:scale(1.05)/*Make the button grow slightly*/
+    transform:scale(1.05); /*Make the button grow slightly*/
 }
 
 #special-of-the-day {
@@ -64,5 +64,21 @@
     color: black;
 
 }
- 
+#Contact-Us
+{color: white;
+    background-color: cyan;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+    transition:0.3s;
+     width:fit-content ;
+
+}
+ #Contact-Us:hover
+ {
+    background-color: rgb(195, 0, 255); /*A slightly lighter cyan*/
+    transform:scale(1.05); /*Make the button grow slightly*/
+    
+}
 

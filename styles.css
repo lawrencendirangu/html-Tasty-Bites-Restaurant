@@ -107,3 +107,11 @@
     }
 }
 
+/*This removes the underline from the links and adds a nice hover effect*/
+a {
+    text-decoration: none; /*Remove underline*/
+    color: #27ae60; /*Set link color to match the buttons*/
+    margin-left: 15px; /*Add some space between links*/
+    transition: color 0.3s; /*Smooth transition for hover effect*/
+}
+

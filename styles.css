@@ -114,4 +114,6 @@ a {
     margin-left: 15px; /*Add some space between links*/
     transition: color 0.3s; /*Smooth transition for hover effect*/
 }
-
+a:hover {
+    color: #2ecc71; /*A slightly lighter green on hover*/
+}

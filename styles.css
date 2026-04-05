@@ -82,28 +82,30 @@
     
 }
 
-.video-grid {
+.video-container{
     display: flex; /* Display videos in a row */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-around; /* Add eqaul space between them */
+    flex-wrap: wrap; /* Allow videos to wrap to the next line on smaller screens */
     gap: 20px;/*Adds a nice clean space between the videos*/
-    justify-content: center;/*center them on the page*/
-    margin-bottom: 30px;
+    padding: 20px; /*Adds some breathing room around the video section*/
 }
 
-.video-grid video {
-    width:calc(50%-10px);
-    max-width: 500px; /*Make videos take up the full width of their container*/
-    border-radius: 12px; /*Add some rounded corners for a softer look*/
+.video-box video {
+    width:45%;/*makes each box take up less than half the screen*/
+    aspect-ratio: 1/1;/*this is the magic  code for a square shape*/
+    object-fit: cover;/*ensure the video fills the square without stretching*/
+    border-radius: 15px; /*Optional:makes them look professional with rounded corners*/
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);  /*Add a subtle shadow for depth*/   
 }
 
 /* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-    .video-grid {
+@media (max-width: 500px) {
+    .video-container {
         flex-direction: column; /*Stack videos vertically on small screens*/
+        align-items: center; /*Center videos when stacked*/
     }
-    .video-grid video {
-        width: 100%; /*Make videos take up the full width on small screens*/
+    .video-box video {
+        width: 50%;
     }
 }
 

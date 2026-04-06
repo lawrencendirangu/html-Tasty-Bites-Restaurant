@@ -1,5 +1,5 @@
 .nav {
-    background-color: #ff6347;
+    background-color: black;
     padding: 1rem;
 }
 
@@ -65,7 +65,7 @@
     transform:scale(1.05); /*Make the button grow slightly*/
 }
 
-#special-of-the-day {
+#menu {
     border:2px solid gold;/*A gold border only for the special*/
     background-color:#fffdf0;/*A slight yellow tilt*/
 }

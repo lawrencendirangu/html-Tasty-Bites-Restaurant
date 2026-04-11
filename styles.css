@@ -29,6 +29,42 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.hero {
+    height: 100vh;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.6), 
+    rgba(0,0,0,0.6)),
+    url("images/food-bg.jpg");
+    
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color:#ebe9e9;
+    text-align: center;
+    padding: 80px;/*Pushes the content down from the top of the hero section*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+ 
+    .hero-subtitle{
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    color:#fff;
+    margin-bottom: 20px;
+
+    
+        
+        }
+    }
+
+
+
 .menu-item{
  color:rgb(8, 8, 238);
  font-weight:bold;

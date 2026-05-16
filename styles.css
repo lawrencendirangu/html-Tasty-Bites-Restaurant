@@ -30,32 +30,38 @@
 }
 
 .hero {
-    height: 100vh;
-
-    background-image:
-    linear-gradient(
-         to top,
-        rgba(0,0,0,0.85)0%, 
-    rgba(0,0,0,0.5)40%,
-    rgba(0,0,0,0.2)100%,
-    ),
-    url("./images/food-bg.jpg");
-    
-
+  width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url("./images/burger.jpg");
     background-size: cover;
     background-position: center;
 
     color: orange;
     text-align: center;
-    padding: 80px;/*Pushes the content down from the top of the hero section*/
+    padding: 80px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
  
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.35);
+    z-index: 0;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
     .hero-subtitle{
     font-family: playfair display, serif;
     font-size: 3.5em;
@@ -93,13 +99,7 @@
         .btn:hover{
             opacity: 0.9;
             transform: translateY(-2px);
-     
-    
-        
         }
-    
-
-
 
 .menu-item{
  color:rgb(8, 8, 238);
@@ -107,6 +107,7 @@
  font-size:1.2em;
  list-style-type:none;
 }
+
 .menu-card{
     border:1px solid #ddd;
     padding:20px;
@@ -115,6 +116,7 @@
     width: 250px;
     background-color:white;
 }
+
 .Menu{
     background-color: #ff6347;
     color: beige;
@@ -123,23 +125,9 @@
     width: fit-content;
 }
 
-.btn{
-    background-color:#27ae60;
-    color:white;
-    padding:10px 15px;
-    border:none;
-    border-radius:5px;
-    cursor: pointer;
-    transition:0.3s;
-}
-.btn:hover{
-    background-color:#2ecc71; /*A slightly lighter green*/
-    transform:scale(1.05); /*Make the button grow slightly*/
-}
-
 #menu {
-    border:2px solid gold;/*A gold border only for the special*/
-    background-color:#fffdf0;/*A slight yellow tilt*/
+    border:2px solid gold;
+    background-color:#fffdf0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -188,42 +176,42 @@
 }
 
 .menu-item p {
-    color:#ff6347; /*This is a nice tomato red */
-    font-weight : bold ; /* Makes the words stand out more */
-    background-color: #fff4e6; /* Adds a light orange background highligt */
-    padding:5 px;/* Rounds  the corners of the  highlight */
-
+    color:#ff6347;
+    font-weight : bold ;
+    background-color: #fff4e6;
+    padding:5 px;
 }
 
 /* First item (Milkshakes) */
 .menu-item:nth-child(1) p{
     color: red;
 }
+
 /* Second  item(Coffee) */
 .menu-item:nth-child(2) p{
     color: saddlebrown;
 }
+
  /*Third item(Carbonated Drinks) */
  .menu-item:nth-child(3) p {
     color: darkblue;
  }
+
 /*Fourth item(Fresh juices)*/
 .menu-item:nth-child(4) p {
     color: black;
-
 }
 
 @import url(`https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap`);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
 }
+
 body{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     min-height: 100vh;
     background-image: url("img.avif") no-repeat;
     background-size: cover;
@@ -248,12 +236,14 @@ body{
     align-items: center;
     padding: 20px;
 }
+
 .wrapper .input-box{
     width: 100%;
     height:40px;
     position: relative;
     margin-bottom: 30px;
 }
+
 .wrapper .input-box input{
     width: 100%;
     height: 100%;
@@ -265,9 +255,11 @@ body{
     color: #222;
     padding: 20px 90px 20px 20px;
 }
+
 .wrapper .input-box input::placeholder{
     color: #666;
 }
+
 .wrapper .input-box span{
     position: absolute;
     right: 100px;
@@ -276,6 +268,7 @@ body{
     font-size: 16px;
     color: #222;
 }
+
 .wrapper .input-box .toggle-password{
     position: absolute;
     right: 15px;
@@ -288,33 +281,41 @@ body{
     cursor: pointer;
     padding: 0 8px;
 }
+
 .wrapper .input-box .toggle-password:hover{
     text-decoration: underline;
 }
+
 .wrapper .remember-forgot{
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
+
 .wrapper h2{
     color: #111;
     margin-bottom: 20px;
 }
+
 .wrapper{
     color: #111;
 }
+
 .wrapper .remember-forgot label input{
     accent-color: #111;
     margin-right: 3px;
 }
+
 .wrapper .remember-forgot a{
     color: #111;
     text-decoration: none;
 }
+
 .wrapper .remember-forgot a:hover{
     text-decoration: underline;
 }
+
 .wrapper .btn{
     width: 100%;
     height: 45px;
@@ -328,63 +329,67 @@ body{
     color: #fff;
     font-weight: 600;
 }
+
 .wrapper .register-link{
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
     color: #111;
 }
+
 .wrapper .register-link p a{
     color: #27ae60;
     text-decoration: none;
     font-weight: 600;
 }
+
 .wrapper .register-link p a:hover{
     text-decoration: underline;
 }
+
 #Contact-Us
-{color: white;
+{
+    color: white;
     background-color: cyan;
     padding:10px 15px;
     border:none;
     border-radius:5px;
     cursor: pointer;
     transition:0.3s;
-     width:fit-content ;
-
+    width:fit-content;
 }
- #Contact-Us:hover
- {
-    background-color:rgb(22, 136, 2); /*A slightly lighter cyan*/
-    transform:scale(1.05); /*Make the button grow slightly*/
-    
+
+#Contact-Us:hover
+{
+    background-color:rgb(22, 136, 2);
+    transform:scale(1.05);
 }
 
 .video-container{
-    display: flex; /* Display videos in a row */
-    justify-content: space-around; /* Add eqaul space between them */
-    flex-wrap: nowrap; /* Keep videos on one row */
-    gap: 20px;/*Adds a nice clean space between the videos*/
-    padding: 20px; /*Adds some breathing room around the video section*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
 }
 
 .video-box {
-    flex: 1; /* Each video takes equal space */
+    flex: 1;
 }
 
 .video-box video {
-    width: 100%;/*makes video fill its container*/
-    aspect-ratio: 16/9;/*a more standard video aspect ratio*/
-    object-fit: cover;/*ensure the video fills properly without stretching*/
-    border-radius: 15px; /*Optional:makes them look professional with rounded corners*/
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);  /*Add a subtle shadow for depth*/   
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);   
 }
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 500px) {
     .video-container {
-        flex-direction: column; /*Stack videos vertically on small screens*/
-        align-items: center; /*Center videos when stacked*/
+        flex-direction: column;
+        align-items: center;
     }
     .video-box video {
         width: 50%;
@@ -393,11 +398,13 @@ body{
 
 /*This removes the underline from the links and adds a nice hover effect*/
 a {
-    text-decoration: none; /*Remove underline*/
-    color: #27ae60; /*Set link color to match the buttons*/
-    margin-left: 15px; /*Add some space between links*/
-    transition: color 0.3s; /*Smooth transition for hover effect*/
+    text-decoration: none;
+    color: #27ae60;
+    margin-left: 15px;
+    transition: color 0.3s;
 }
+
 a:hover {
-    color: #2ecc71; /*A slightly lighter green on hover*/
+    color: #2ecc71;
 }
+

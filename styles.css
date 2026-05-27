@@ -177,7 +177,7 @@
     color:#ff6347;
     font-weight : bold ;
     background-color: #fff4e6;
-    padding:5 px;
+    padding:5px;
 }
 
 /* First item (Milkshakes) */
@@ -198,6 +198,13 @@
 /*Fourth item(Fresh juices)*/
 .menu-item:nth-child(4) p {
     color: black;
+}
+.price {
+    color: #27ae60;
+    background-color: #eafaf1;
+    padding: 5px;
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 #Contact-Us

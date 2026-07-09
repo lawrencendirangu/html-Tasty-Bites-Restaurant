@@ -1,195 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"content="Best Restaurant in Town">
-    <meta property="og:title"content="Tasty Bites Restaurant">
-    <meta property="og:description"content="The Home of fresh delicious burgers,wings and shawarmas in town">
-    <meta property="og:image"content="images/burger.jpg">
-    <title>Tasty Bites Restaurant</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/jpeg" href="images/burger.jpg">
-   
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="Tasty Bites Restaurant - freshly grilled, boldly delicious meals, fast delivery, and unforgettable flavor." />
+   <meta property="og:title" content="Tasty Bites Restaurant" />
+   <meta property="og:description" content="Fresh burgers, wings, wraps, bowls, desserts, and premium combos served fast." />
+   <meta property="og:image" content="images/Air Fryer Recipes _ BBQ Chicken Wings & Cheeseburger Platter.jpg" />
+   <title>Tasty Bites Restaurant</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="styles.css" />
+   <link rel="icon" type="image/jpeg" href="images/burger.jpg" />
 </head>
-
 <body>
-        <header class="header">
-         <nav class="nav"> q
-            <ul>
-               <li><a href="#main-title">Home</a></li>
-               <li><a href="#menu">Menu</a></li>
-               <li><a href="#Contact-Us">Contact</a></li>
+   <div class="site-bg-shapes" aria-hidden="true">
+      <span class="shape shape-one"></span>
+      <span class="shape shape-two"></span>
+      <span class="shape shape-three"></span>
+   </div>
+
+   <header class="header" id="home">
+      <nav class="nav container" aria-label="Main navigation">
+         <a href="#home" class="brand" aria-label="Tasty Bites home">
+            <img src="images/logo.jpg" alt="Tasty Bites logo" class="brand-logo" />
+            Tasty<span>Bites</span>
+         </a>
+         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+         <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Menu</a></li>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="#specials">Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reservation">Reserve</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="btn btn-nav js-whatsapp-order" href="https://wa.me/9710508841955" data-item="I want to order from Tasty Bites">Order Now</a></li>
+         </ul>
+      </nav>
+
+      <div class="container">
+         <p class="demo-badge">Portfolio Demo - Concept Website Showcase</p>
+      </div>
+
+      <section class="hero container">
+         <div class="hero-copy reveal-up">
+            <p class="eyebrow">Street style. Signature taste.</p>
+            <h1>Freshly Grilled.<br />Boldly Delicious.</h1>
+            <p>
+               Experience handcrafted burgers, loaded wraps, crispy wings, and premium platters
+               made fresh every day.
+            </p>
+            <div class="hero-actions">
+               <a class="btn" href="#categories">Explore Menu</a>
+               <a class="btn" href="menu.html">See Full Menu</a>
+               <a class="btn btn-ghost" href="#contact">Contact Us</a>
+            </div>
+            <ul class="hero-highlights">
+               <li>25-30 mins delivery</li>
+               <li>4.9 customer rating</li>
+               <li>Fresh ingredients daily</li>
             </ul>
-         </nav>
+         </div>
 
-         <section class="hero">
-            <p class="hero-subtitle">Welcome to</p>
-      <h1 class="hero-title"><em><span class="highlight">Tasty Bites</span> Restaurant </em></h1>
-      
+         <div class="hero-media reveal-up delay-1">
+            <img src="images/Air Fryer Recipes _ BBQ Chicken Wings & Cheeseburger Platter.jpg" alt="Crispy fried chicken platter with fries and burgers" class="cover-image" />
+            <div class="floating-card">Best Seller: Tasty Bites Grand Combo</div>
+         </div>
+      </section>
+   </header>
 
+   <main>
+      <section class="section container" id="categories">
+         <div class="section-head reveal-up">
+            <p class="eyebrow">Popular Picks</p>
+            <h2>Popular Categories</h2>
+         </div>
+         <div class="category-grid">
+            <article class="category-card reveal-up">
+               <img src="images/american burger.jpg" alt="Juicy stacked burger" class="cover-image" />
+               <h3>Burgers</h3>
+            </article>
+            <article class="category-card reveal-up delay-1">
+               <img src="images/shawarma.jpg" alt="Stuffed chicken wrap" class="cover-image" />
+               <h3>Wraps</h3>
+            </article>
+            <article class="category-card reveal-up delay-2">
+               <img src="images/hot wings.jpg" alt="Spicy fried chicken wings" class="cover-image" />
+               <h3>Fried Chicken</h3>
+            </article>
+            <article class="category-card reveal-up">
+               <img src="images/pizza.jpg" alt="Cheesy pizza slices" class="cover-image" />
+               <h3>Pizza</h3>
+            </article>
+            <article class="category-card reveal-up delay-1">
+               <img src="images/ggq platter.jpg" alt="Mixed grill platter" class="cover-image" />
+               <h3>BBQ Platters</h3>
+            </article>
+            <article class="category-card reveal-up delay-2">
+               <img src="images/health bowl.jpg" alt="Nutritious bowl with vegetables" class="cover-image" />
+               <h3>Healthy Bowls</h3>
+            </article>
+         </div>
+      </section>
 
-      <p class="hero-description"> Welcome and Experience the best of fresh and delicious meals in town</p>
-
-
-      <button class="btn">view menu</button>
-   </section>
-         
-      </header>
-
-      
-      <section>
-            <div class="menu-item"id="menu">
-
-         <h1 class="Menu">Check out<a href="images/Fast food menu.png">Our Menu</a></h1>
-
-           <figure>
-            <img src="images/american burger.jpg" alt="Delicious American Burger" width="200" height="200">
-            <figcaption><em>Combo Meals</em></figcaption>
-            <p class="price">usd 35</p>
-            <button class="btn">Order Now</button>
-           </figure>
-
-           <figure>
-            <img src="images/hot wings.jpg" alt="Spicy Chicken Wings" width="300" height="200">
-            <figcaption><em>Spicy Chicken Wings</em></figcaption>
-            <p class="price">usd 25</p>
-            <button class="btn">Order Now</button>
-           </figure>
-           <figure>
-            <img src="images/shawarma.jpg" alt="Tasty Shawarma" width="300" height="200">
-            <figcaption><em>Delicious Shawarma</em></figcaption>
-            <p class="price">usd 30</p>
-            <button class="btn">Order Now</button>
-           </figure>
-           <figure>
-            <img src="images/pizza.jpg" alt="Crispy pizza with melted cheese, pepperoni slices, and fresh green peppers on a wooden serving board, conveying a warm and appetizing dining experience" width="300" height="200">
-            <figcaption><em>Delicious Pizza</em></figcaption>
-            <p class="price">usd 40</p>
-            <button class="btn">Order Now</button>
-           </figure>
-
-           <figure>
-            <img src="images/Fresh  juices.jpg" alt="Fresh Fruit Juices" width="200" height="200">
-            <figcaption><em>Fresh Juices</em></figcaption>
-            <p class="price">usd 20</p>
-            <button class="btn">Order Now</button>
-           </figure>
-
-           <figure>
-            <img src="images/Milkshakes.jpg" alt="Creamy Milkshakes" width="200" height="200">
-            <figcaption><em>Creamy Milkshakes</em></figcaption>
-            <p class="price">usd 25</p>
-            <button class="btn">Order Now</button>
-           </figure>
-
-           <figure>
-            <img src="images/Baked Goods And Pastries.jpg" alt="Fresh Baked Goods" width="200" height="200">
-            <figcaption><em>Baked Goods</em></figcaption>
-            <p class="price">usd 30</p>
-            <button class="btn">Order Now</button>
-           </figure>
-            </div>
-        <h2>
-         <strong><center><p>See more <a href="images/Fast food menu.png" target="_blank"rel="noopener noreferrer">view Our Menu</a> in our gallery.</p></center></strong></h>
-         </section>
-
-
-       
-         
-         
-            <div class="menu-item"id="menu">
-
-         <figure>
-                <img src="images/Milkshakes.jpg" alt="Creamy Milkshake" width="100">
-               <figcaption><em>Creamy Milkshakes</em></figcaption>
-               <button class="btn">Order Now</button>
-            </figure>
-
-               <figure> 
-                  <img src="images/Coffee.jpg" alt="Hot" width="100">
-               <figcaption><em>Hot Coffee</em></figcaption>
-               <button class="btn">Order Now</button>
-               </figure>
-
-               <figure>
-                  <img src="images/Carbonated Drinks.jpg" alt="Cold" width="100">
-               <figcaption><em>CARBONATED DRINKS</em></figcaption>
-               <button class="btn">Order Now</button>
-               </figure>
-
-               <figure>
-                  <img src="images/Fresh  juices.jpg" alt="Delectable" width="100">
-               <figcaption><em>FRESH JUICES</em></figcaption>
-               <button class="btn">Order Now</button>
-               </figure>
-            </div>
-         </section>
-
-         <section>
-            <div class="menu-item"id="menu">
-            <h4><em>List of Desserts</em></h4>
-            <figure>
-               <img src="images/Frozen Treats.jpg" alt="Sweet" width="150">
-               <figcaption><em>FROZEN TREATS</em></figcaption>
-               <button class="btn">Order Now</button>
-               </figure>
-
-               <figure> 
-                  <img src="images/Baked Goods And Pastries.jpg" alt="Crunchy" width="150">
-               <figcaption><em>BAKED GOODS AND PASTRIES</em></figcaption>
-               <button class="btn">Order Now</button>
-               </figure>
-               
-               <figure>
-                  <img src="images/Pies And Turnovers.jpg" alt="Tasty" width="150">
-               <figcaption><em>PIES AND TURNOVERS</em></figcaption>
-               <button class="btn">Order Now</button>
-               </figure >
-            </div>
-         </section>
-
-         <section id="kitchen-tour">
-            <div class="video-container">
-               <div class="video-box">
-                  <h5><em>See our Kitchen</em></h5>
-                  <video width="100%" controls poster="images/kitchen-preview.jpg">
-                     <source src="videos/kitchen-tour.mp4" type="video/mp4">
-                     Your browser does not support the video tag.
-                  </video> 
-               </div>
-
-               <div class="video-box">
-                  <h6><em>Our Signature Dishes</em></h6>
-                  <video width="100%" controls poster="images/pizza.jpg">
-                     <source src="videos/making-pizza.mp4" type="video/mp4">
-                     Your browser does not support the video tag.
-                  </video>
+      <section class="section section-alt" id="specials">
+         <div class="container">
+            <div class="section-head reveal-up">
+               <p class="eyebrow">Chef Selection</p>
+               <h2>Chef's Specials</h2>
+               <div class="section-tools">
+                  <a class="btn" href="menu.html">Open Full Menu</a>
                </div>
             </div>
-         </section>
 
-         <footer style="text-align: center;padding: 20px;">
+            <div class="special-grid">
+               <article class="special-card reveal-up">
+                  <img src="images/grand combo.jpg" alt="Burger fries and drink combo" class="cover-image" />
+                  <div class="special-content">
+                     <h3>Tasty Bites Grand Combo</h3>
+                     <p>Burger, fries, and drink with our signature fire sauce.</p>
+                     <div class="special-meta">
+                        <span class="price">$19.99</span>
+                        <span class="tag">Hot Deal</span>
+                     </div>
+                  </div>
+               </article>
 
-            <section id="Contact-Us">
-               <h7><em>Contact-Us</em></h7>
-               <p>Call Us<a href="tel:123-456-7890">123-456-7890</a></p>
-               <p>Email us<a href="mailto:info@tastybites.com">info@tastybites.com</a></p>
-            
-            </section>
+               <article class="special-card reveal-up delay-1">
+                  <img src="images/spicy wrap pack.jpg" alt="Spicy wrap combo meal" class="cover-image" />
+                  <div class="special-content">
+                     <h3>Spicy Wrap Pack</h3>
+                     <p>Loaded wrap with fries and fresh dip on the side.</p>
+                     <div class="special-meta">
+                        <span class="price">$16.50</span>
+                        <span class="tag">Best Seller</span>
+                     </div>
+                  </div>
+               </article>
 
-        <center><section id="location">
-            <h2><em>Visit tasty Bites</em></h2>
-            <p>Find us the heart of Newyork City</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.1234567890123!2d-122.41941548456789!3d37.77492927901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c12345678%3A0xabcdef1234567890!2sTasty%20Bites%20Restaurant!5e0!3m2!1sen!2sus!4v1234567890123" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-         </section>
-         </center>
+               <article class="special-card reveal-up delay-2">
+                  <img src="images/grill mix platter.jpg" alt="Mixed grill platter with kebabs" class="cover-image" />
+                  <div class="special-content">
+                     <h3>Grill Mix Platter</h3>
+                     <p>Chicken, beef bites, veggies, and garlic bread.</p>
+                     <div class="special-meta">
+                        <span class="price">$22.99</span>
+                        <span class="tag">Combo Pack</span>
+                     </div>
+                  </div>
+               </article>
+            </div>
+         </div>
+      </section>
 
+      <section class="section container" id="why-us">
+         <div class="section-head reveal-up">
+            <p class="eyebrow">What Sets Us Apart</p>
+            <h2>Why Food Lovers Choose Us</h2>
+         </div>
 
-         </footer>
-      
+         <div class="feature-grid">
+            <article class="feature-card reveal-up">
+               <h3>Fresh Ingredients</h3>
+               <p>Daily sourced produce and premium cuts for full flavor.</p>
+            </article>
+            <article class="feature-card reveal-up delay-1">
+               <h3>Fast Delivery</h3>
+               <p>Hot meals to your door in under 30 minutes on average.</p>
+            </article>
+            <article class="feature-card reveal-up delay-2">
+               <h3>Hygienic Kitchen</h3>
+               <p>Strict prep standards and clean cooking workflow every shift.</p>
+            </article>
+            <article class="feature-card reveal-up">
+               <h3>Premium Taste</h3>
+               <p>Balanced spices, house-made sauces, and chef-tested recipes.</p>
+            </article>
+         </div>
+      </section>
+
+      <section class="section section-dark" id="about">
+         <div class="container about-layout">
+            <div class="about-media reveal-up">
+               <img src="images/team.jpg" alt="Restaurant team in the kitchen" class="cover-image" />
+            </div>
+            <div class="about-copy reveal-up delay-1">
+               <p class="eyebrow">About The Brand</p>
+               <h2>Taste The Fire, Feel The Vibe</h2>
+               <p>
+                  Tasty Bites started as a neighborhood kitchen with one mission: serve food that
+                  feels exciting, comforting, and unforgettable in every bite.
+               </p>
+               <p>
+                  From quick lunch combos to family-size platters, we deliver quality meals
+                  that balance speed, freshness, and taste.
+               </p>
+               <a class="btn" href="#reservation">Book A Table</a>
+            </div>
+         </div>
+      </section>
+
+      <section class="section container" id="gallery">
+         <div class="section-head reveal-up">
+            <p class="eyebrow">Visual Taste</p>
+            <h2>Kitchen And Signature Moments</h2>
+         </div>
+
+         <div class="media-grid">
+            <video poster="images/kitchen-preview.jpg" class="reveal-up hover-preview" preload="metadata" muted loop playsinline>
+               <source src="videos/kitchen-tour.mp4" type="video/mp4" />
+               Your browser does not support the video tag.
+            </video>
+            <video poster="images/pizza.jpg" class="reveal-up delay-1 hover-preview" preload="metadata" muted loop playsinline>
+               <source src="videos/making-pizza.mp4" type="video/mp4" />
+               Your browser does not support the video tag.
+            </video>
+         </div>
+      </section>
+
+      <section class="section section-alt" id="reservation">
+         <div class="container reservation-wrap">
+            <div class="reservation-copy reveal-up">
+               <p class="eyebrow">Reserve Your Spot</p>
+               <h2>Book A Table Or Pre-Order</h2>
+               <p>
+                  Planning dinner tonight? Reserve a table now or pre-order your favorite combo.
+               </p>
+            </div>
+
+            <form class="reservation-form reveal-up delay-1" id="reservation-form">
+               <label>
+                  Full Name
+                  <input type="text" name="fullName" placeholder="Your name" required />
+               </label>
+               <label>
+                  Phone Number
+                  <input type="tel" name="phone" placeholder="+971 ..." required />
+               </label>
+               <label>
+                  Guests
+                  <input type="number" name="guests" min="1" max="20" placeholder="2" required />
+               </label>
+               <label>
+                  Date
+                  <input type="date" name="date" required />
+               </label>
+               <label>
+                  Time
+                  <input type="time" name="time" required />
+               </label>
+               <label>
+                  Message
+                  <textarea rows="4" name="message" placeholder="Any special requests?"></textarea>
+               </label>
+               <button type="submit" class="btn">Request Reservation</button>
+               <p id="reservation-status" class="reservation-status" aria-live="polite"></p>
+            </form>
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer" id="contact">
+      <div class="container footer-grid">
+         <div>
+            <a href="#home" class="brand brand-footer">Tasty<span>Bites</span></a>
+            <p>Flame-grilled meals, bold sauces, and city-fast delivery.</p>
+         </div>
+
+         <div>
+            <h3>Contact</h3>
+            <p><a href="tel:+9710508841955">+971 050 884 1955</a></p>
+            <p><a href="mailto:contact@getalmasar.com">contact@getalmasar.com</a></p>
+            <p>Dubai Marina, Dubai, UAE</p>
+         </div>
+
+         <div>
+            <h3>Hours</h3>
+            <p>Mon - Thu: 11:00 AM - 11:00 PM</p>
+            <p>Fri - Sun: 11:00 AM - 1:00 AM</p>
+         </div>
+      </div>
+
+      <div class="container map-wrap">
+         <iframe
+            src="https://www.google.com/maps?q=Dubai+Marina&output=embed"
+            title="Restaurant location"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+         ></iframe>
+      </div>
+
+      <p class="copyright">&copy; <span id="year"></span> Tasty Bites Restaurant. All rights reserved.</p>
+      <p class="demo-note">Demo only for portfolio showcase. Contact details are for project presentation.</p>
+   </footer>
+
+   <a
+      class="whatsapp-float js-whatsapp-order"
+      href="https://wa.me/9710508841955"
+      data-item="Hi Tasty Bites, I would like to place an order."
+      aria-label="Chat on WhatsApp"
+   >
+      WhatsApp Order
+   </a>
+
    <script src="script.js"></script>
-    </body>
+</body>
 </html>

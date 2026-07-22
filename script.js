@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const WHATSAPP_NUMBER = "9710508841955";
+﻿document.addEventListener("DOMContentLoaded", () => {
+  const WHATSAPP_NUMBER = "971527717243";
   const navToggle = document.getElementById("nav-toggle");
   const navLinks = document.getElementById("nav-links");
   const yearEl = document.getElementById("year");

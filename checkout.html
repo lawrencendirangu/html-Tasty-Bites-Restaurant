@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="Checkout flow for Tasty Bites Restaurant orders." />
+   <title>Checkout | Tasty Bites</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="checkout-page">
+   <header class="checkout-header">
+      <div class="container checkout-header-inner">
+         <a href="index.html" class="brand" aria-label="Tasty Bites home">
+            <img src="images/logo.jpg" alt="Tasty Bites logo" class="brand-logo" />
+            Tasty<span>Bites</span>
+         </a>
+         <a href="menu.html" class="btn btn-ghost">Back To Menu</a>
+      </div>
+      <div class="container">
+         <p class="demo-badge">Portfolio Demo - Checkout Concept</p>
+      </div>
+   </header>
+
+   <main class="section">
+      <div class="container">
+         <div class="checkout-steps" aria-label="Checkout steps">
+            <div class="step is-active"><span>1</span><p>Choose Items</p></div>
+            <div class="step"><span>2</span><p>Review And Delivery</p></div>
+            <div class="step"><span>3</span><p>Payment And Confirm</p></div>
+         </div>
+
+         <div class="checkout-layout">
+            <section class="checkout-card" aria-labelledby="choose-title">
+               <h2 id="choose-title">1. Choose Your Items</h2>
+               <div class="checkout-categories" id="checkout-categories"></div>
+               <div class="checkout-products" id="checkout-products"></div>
+            </section>
+
+            <section class="checkout-card" aria-labelledby="review-title">
+               <h2 id="review-title">2. Review Your Order</h2>
+               <div class="checkout-cart" id="checkout-cart"></div>
+
+               <div class="checkout-summary-lines">
+                  <p><span>Subtotal</span><strong id="subtotal-amount">$0.00</strong></p>
+                  <p><span>Delivery Fee</span><strong id="delivery-fee">$2.99</strong></p>
+                  <p><span>Tax (12%)</span><strong id="tax-amount">$0.00</strong></p>
+                  <p class="checkout-total"><span>Total</span><strong id="total-amount">$0.00</strong></p>
+               </div>
+
+               <div class="delivery-mode" role="group" aria-label="Delivery mode">
+                  <button type="button" class="mode-btn is-active" data-mode="delivery">Delivery</button>
+                  <button type="button" class="mode-btn" data-mode="pickup">Pickup</button>
+               </div>
+
+               <label class="checkout-field">
+                  Delivery Address
+                  <input type="text" id="delivery-address" value="Dubai Marina, Dubai" />
+               </label>
+               <label class="checkout-field">
+                  Delivery Time
+                  <input type="text" id="delivery-time" value="Today, 6:30 PM - 6:45 PM" />
+               </label>
+            </section>
+
+            <section class="checkout-card" aria-labelledby="payment-title">
+               <h2 id="payment-title">3. Payment And Confirm</h2>
+
+               <div class="payment-group">
+                  <p class="payment-label">Payment Method</p>
+                  <label class="pay-option"><input type="radio" name="pay-method" value="Card" checked /> Credit / Debit Card</label>
+                  <label class="pay-option"><input type="radio" name="pay-method" value="Apple Pay" /> Apple Pay</label>
+                  <label class="pay-option"><input type="radio" name="pay-method" value="Google Pay" /> Google Pay</label>
+                  <label class="pay-option"><input type="radio" name="pay-method" value="Cash" /> Cash On Delivery</label>
+               </div>
+
+               <div class="checkout-summary-box">
+                  <p><span>Items</span><strong id="summary-items">0</strong></p>
+                  <p><span>Delivery Fee</span><strong id="summary-delivery">$2.99</strong></p>
+                  <p><span>Tax</span><strong id="summary-tax">$0.00</strong></p>
+                  <p class="checkout-total"><span>Total</span><strong id="summary-total">$0.00</strong></p>
+               </div>
+
+               <button type="button" class="btn checkout-submit" id="place-order-btn">Place Order</button>
+               <p class="checkout-note">Secure demo checkout. Orders are sent to WhatsApp for confirmation.</p>
+               <p id="checkout-status" class="reservation-status" aria-live="polite"></p>
+            </section>
+         </div>
+      </div>
+   </main>
+
+   <script src="checkout.js"></script>
+</body>
+</html>
